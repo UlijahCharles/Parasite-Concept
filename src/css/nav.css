@@ -1,0 +1,48 @@
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 11%;
+}
+
+.nav-list_item {
+  /* margin: 0 2rem; */
+  /* margin: 0 6%; */
+  display: flex;
+  font-size: 1.8rem;
+  gap: 20%;
+}
+
+.nav-list_item_link {
+  transition: color, transform 0.7s;
+}
+
+.nav-list_item_link:hover {
+  color: #e74d51;
+  transform: scale(1.2);
+}
+
+.poster-container {
+  outline: 0.2rem solid white;
+  outline-offset: 2rem;
+  margin: 0 3rem;
+  padding-top: 18rem;
+}
+
+.movie-title {
+  position: absolute;
+  top: 10.5rem;
+  z-index: -1;
+}
+
+.poster {
+  filter: grayscale(100%);
+  position: relative;
+  z-index: 90;
+  transition: filter 2s;
+}
+
+.poster:hover {
+  filter: none;
+}
