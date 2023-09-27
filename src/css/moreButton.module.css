@@ -1,0 +1,20 @@
+.button {
+  width: 100%;
+  border: 0.15rem solid white;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  padding: 1.5rem;
+  color: white;
+  position: relative;
+  z-index: 500;
+  transition: all 0.7s;
+}
+
+.button:hover {
+  color: #e74d51;
+  border: 0.15rem solid #e74d51;
+  border-left: none;
+  border-right: none;
+  transform: scale(1.2);
+}

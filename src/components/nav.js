@@ -31,6 +31,7 @@ const Nav = () => {
               className="movie-title"
             ></img>
             <img src={PosterImage} alt="Poster" className="poster"></img>
+            <button className="find-button">FIND THE INTRUDER </button>
           </div>
         </li>
         <li className="nav-list_item">

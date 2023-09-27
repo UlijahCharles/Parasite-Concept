@@ -1,17 +1,18 @@
+nav {
+  background-color: #555d50;
+}
+
 .nav-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 11%;
+  gap: 5vw;
 }
 
 .nav-list_item {
-  /* margin: 0 2rem; */
-  /* margin: 0 6%; */
   display: flex;
   font-size: 1.8rem;
-  gap: 20%;
 }
 
 .nav-list_item_link {
@@ -40,9 +41,67 @@
   filter: grayscale(100%);
   position: relative;
   z-index: 90;
-  transition: filter 2s;
+  transition: filter 1.5s;
 }
 
 .poster:hover {
   filter: none;
+}
+
+.find-button {
+  background-color: transparent;
+  border: none;
+  transition: color, transform 0.7s;
+  display: block;
+  margin: 2rem auto;
+  font-family: "Barlow";
+  color: white;
+  font-weight: lighter;
+  font-size: 2rem;
+}
+
+.find-button::before {
+  content: "<";
+}
+
+.find-button::after {
+  content: ">";
+}
+
+.find-button:hover {
+  color: #e74d51;
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 1800px) {
+  .nav-list .nav-list_item__poster:nth-child(4) {
+    order: 1;
+  }
+
+  .nav-list {
+    flex-direction: column-reverse;
+    gap: 2vw;
+  }
+
+  .nav-list_item {
+    font-size: calc(16px + 1vw);
+  }
+
+  .poster-container {
+    padding-top: 0;
+    margin: 6vw;
+    outline-offset: 2vw;
+  }
+
+  .movie-title {
+    position: relative;
+    z-index: 0;
+    top: 0;
+    width: 60vw;
+    min-width: 300px;
+  }
+
+  .poster {
+    display: none;
+  }
 }
