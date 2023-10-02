@@ -6,7 +6,6 @@ import Trailer from "../components/trailer";
 const Home = () => {
   return (
     <React.Fragment>
-      {/* <Nav /> */}
       <Storyline />
       <Trailer />
     </React.Fragment>

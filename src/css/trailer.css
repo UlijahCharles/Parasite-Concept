@@ -1,3 +1,12 @@
+.trailer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
+}
+
 .trailer-title {
   text-align: center;
   font-size: 8vw;
@@ -43,7 +52,7 @@
 
 /* Animation */
 .card-play:after {
-  content: "";
+  content: " ";
   position: absolute;
   top: 50%;
   left: 50%;

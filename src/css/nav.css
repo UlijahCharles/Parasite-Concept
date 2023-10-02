@@ -1,5 +1,6 @@
 nav {
   background-color: #555d50;
+  padding-bottom: 2rem;
 }
 
 .nav-list {
@@ -34,7 +35,7 @@ nav {
 .movie-title {
   position: absolute;
   top: 10.5rem;
-  z-index: -1;
+  z-index: 0;
 }
 
 .poster {
