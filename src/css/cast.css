@@ -1,0 +1,22 @@
+.cast-grid {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  justify-items: center;
+}
+
+.cast-title {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.extra {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .cast-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
