@@ -59,9 +59,9 @@ ul {
 :root {
   --card-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1613479/inception.jpg");
   --card-icon: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1613479/play.svg");
-
   --white: #fff;
   --black: #000;
+  --green: #555d50;
 }
 body {
   background-color: #1f1f1f;

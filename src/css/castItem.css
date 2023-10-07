@@ -1,0 +1,50 @@
+.char-name__odd {
+  color: var(--green);
+  font-size: calc(8px + 0.3vw);
+  position: relative;
+  top: 30%;
+  text-align: right;
+}
+
+.char-name__even {
+  color: var(--green);
+  font-size: calc(8px + 0.3vw);
+  position: relative;
+  top: 30%;
+}
+
+.actor-name__odd {
+  color: white;
+  font-size: calc(16px + 0.5vw);
+  text-align: right;
+  position: relative;
+  top: 35%;
+}
+
+.actor-name__even {
+  color: white;
+  font-size: calc(16px + 0.5vw);
+  position: relative;
+  top: 35%;
+}
+
+.actor-img {
+  max-width: 200px;
+  margin: 0 1em;
+  filter: grayscale(100%);
+  transition: filter 1s;
+  position: relative;
+  z-index: 999;
+}
+
+.actor-img:hover {
+  filter: none;
+}
+
+.__odd {
+  float: right;
+}
+
+.__even {
+  float: left;
+}

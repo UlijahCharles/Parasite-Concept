@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Storyline from "../components/storyline";
 import Trailer from "../components/trailer";
 import useFetch from "../hooks/use-Fetch";
@@ -12,7 +12,7 @@ const Home = (props) => {
     <React.Fragment>
       <Storyline />
       <Trailer />
-      <Cast />
+      <Cast castData={data.Cast} />
     </React.Fragment>
   );
 };

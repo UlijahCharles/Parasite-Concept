@@ -1,24 +1,65 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import CastItem from "./castItem";
 import "../css/cast.css";
+import MoreBotton from "./moreBotton";
 
 const Cast = (props) => {
+  const [castRevealed, setCastRevealed] = useState(false);
+  const finalData = [];
+
+  for (const item in props.castData) {
+    finalData.push(
+      <CastItem
+        key={item}
+        class={
+          props.castData[item].id > 5
+            ? "cast-grid__item close display-none"
+            : "cast-grid__item"
+        }
+        isEven={props.castData[item].id % 2}
+        char={props.castData[item].characterName}
+        actor={props.castData[item].actorName}
+        profile={props.castData[item].imageUrl}
+      />
+    );
+  }
+
+  function toggleFullCast() {
+    if (!castRevealed) {
+      const castDom = document.querySelectorAll(".close");
+
+      for (let i = 0; i < castDom.length; i++) {
+        castDom[i].classList.toggle("display-none");
+        setTimeout(() => {
+          castDom[i].classList.replace("close", "open");
+        }, 0);
+      }
+      setCastRevealed(true);
+    } else {
+      const castDom = document.querySelectorAll(".cast-grid__item");
+      for (let i = castDom.length - 1; i > 5; i--) {
+        castDom[i].classList.replace("open", "close");
+        setTimeout(() => {
+          castDom[i].classList.toggle("display-none");
+        }, 1000);
+      }
+
+      setCastRevealed(false);
+    }
+  }
+
   return (
     <section className="cast">
       <h2 className="cast-title">
         Cast<span className="period">.</span>
       </h2>
-      <section className="cast-grid">
-        <div className="cast-grid__item">1</div>
-        <div className="cast-grid__item">2</div>
-        <div className="cast-grid__item">3</div>
-        <div className="cast-grid__item">4</div>
-        <div className="cast-grid__item">5</div>
-        <div className="cast-grid__item">6</div>
-        <div className="cast-grid__item extra">7</div>
-        <div className="cast-grid__item extra">8</div>
-        <div className="cast-grid__item extra">9</div>
-        <div className="cast-grid__item extra">10</div>
-      </section>
+      <section className="cast-grid">{finalData}</section>
+      <MoreBotton
+        text={"FULL CAST "}
+        onClick={toggleFullCast}
+        icon={""}
+        class={"reveal-button"}
+      />
     </section>
   );
 };
