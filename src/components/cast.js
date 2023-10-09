@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import CastItem from "./castItem";
 import "../css/cast.css";
 import MoreBotton from "./moreBotton";

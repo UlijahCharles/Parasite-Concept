@@ -1,0 +1,13 @@
+.award-name {
+  font-size: var(--para-font-size);
+}
+
+.award-year {
+  font-size: calc(var(--para-font-size) / 2);
+}
+
+.award-category {
+  font-size: calc(var(--para-font-size) / 2);
+  display: block;
+  margin-bottom: 1em;
+}
