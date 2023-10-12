@@ -1,9 +1,8 @@
 import React from "react";
 import "../css/storyline.css";
-
 import img1 from "../assets/family_pizza.jpeg";
 import img2 from "../assets/sibling_bathroom.jpg";
-import MoreBotton from "./moreBotton";
+import ExtraButton from "./extraButton";
 
 const Storyline = () => {
   return (
@@ -74,7 +73,7 @@ const Storyline = () => {
           ></img>
         </div>
       </div>
-      <MoreBotton text="READ FULL STORYLINE" />
+      <ExtraButton text="READ FULL STORYLINE" />
     </section>
   );
 };

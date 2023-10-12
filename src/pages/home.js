@@ -4,6 +4,7 @@ import Trailer from "../components/trailer";
 import useFetch from "../hooks/use-Fetch";
 import Cast from "../components/cast";
 import Director from "../components/director";
+import Facts from "../components/facts";
 
 const Home = (props) => {
   const data = useFetch();
@@ -14,6 +15,7 @@ const Home = (props) => {
       <Trailer />
       <Cast castData={data.Cast} />
       <Director directorData={data.Director} />
+      <Facts />
     </React.Fragment>
   );
 };

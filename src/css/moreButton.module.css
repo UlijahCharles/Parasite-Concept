@@ -1,21 +1,47 @@
 .button {
-  width: 100%;
-  border: 0.15rem solid white;
+  width: 230px;
+  /* border: 0.15rem solid white;
   border-left: none;
-  border-right: none;
+  border-right: none; */
+  border: none;
   background-color: transparent;
   padding: 1.5rem;
   color: white;
   position: relative;
-  transition: all ease-in 0.5s;
-  margin: 5rem 0;
+  transition: all ease-in 0.3s;
+  margin: 5rem auto;
+  text-align: center;
   transform: scaleX(1.1);
+  display: block;
 }
 
 .button:hover {
   color: #e74d51;
-  border: 0.15rem solid #e74d51;
+  /* border: 0.15rem solid #e74d51;
   border-left: none;
-  border-right: none;
+  border-right: none; */
   transform: scale(1.2);
+
+  .down-arrow {
+    color: #e74d51;
+    transform: rotate(0.5turn);
+  }
+}
+
+.down-arrow {
+  vertical-align: sub;
+  margin: 0 0.1em;
+}
+
+.director-button {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  padding-left: 0.3em;
+}
+
+@media screen and (max-width: 768px) {
+  .director-button {
+    margin: 2em auto;
+  }
 }

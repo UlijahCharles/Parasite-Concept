@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CastItem from "./castItem";
 import "../css/cast.css";
-import MoreBotton from "./moreBotton";
+import ExtraButton from "./extraButton";
 
 const Cast = (props) => {
   const [castRevealed, setCastRevealed] = useState(false);
@@ -50,11 +50,11 @@ const Cast = (props) => {
 
   return (
     <section className="cast">
-      <h2 className="cast-title">
+      <h2 className="section-title">
         Cast<span className="period">.</span>
       </h2>
       <section className="cast-grid">{finalData}</section>
-      <MoreBotton
+      <ExtraButton
         text={"FULL CAST "}
         onClick={toggleFullCast}
         icon={""}

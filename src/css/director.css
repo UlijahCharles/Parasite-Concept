@@ -4,9 +4,6 @@
   justify-content: center;
   gap: 12vw;
 }
-.section-title {
-  text-align: center;
-}
 
 .director-name {
   color: var(--white);

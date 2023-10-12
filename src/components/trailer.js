@@ -33,7 +33,7 @@ const Trailer = (props) => {
 
   return (
     <section className="trailer">
-      <h2 className="trailer-title">
+      <h2 className="section-title">
         Trailer<span className="period">.</span>
       </h2>
       <div className="card">

@@ -9,13 +9,6 @@
   align-items: center;
 }
 
-.storyline-header__title {
-  color: white;
-  font-size: 8vw;
-  font-weight: lighter;
-  margin-bottom: 0;
-}
-
 .storyline-header__subtitle {
   color: white;
   font-size: 1.1vw;
