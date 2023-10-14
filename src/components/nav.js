@@ -1,29 +1,33 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import PosterImage from "../assets/parasite_header.jpg";
 import TitleImage from "../assets/parasite-title.png";
 import "../css/nav.css";
 
-const Nav = () => {
+const Nav = (props) => {
   return (
     <nav className="nav">
       <ul className="nav-list">
         <li className="nav-list_item">
-          <NavLink className={"nav-list_item_link"} to={"#storyline"}>
+          <HashLink smooth className={"nav-list_item_link"} to={"#storyline"}>
             Storyline
-          </NavLink>
+          </HashLink>
         </li>
         <li className="nav-list_item">
-          <NavLink className={"nav-list_item_link"} to={"#screencaps"}>
-            Screencaps
-          </NavLink>
+          <HashLink smooth className={"nav-list_item_link"} to={"#trailer"}>
+            Trailer
+          </HashLink>
         </li>
         <li className="nav-list_item">
-          <NavLink className={"nav-list_item_link"} to={"#cast"}>
+          <HashLink smooth className={"nav-list_item_link"} to={"#cast"}>
             Cast
-          </NavLink>
+          </HashLink>
         </li>
-        <li className="nav-list_item__poster">
+        <li
+          className={`nav-list_item__poster ${
+            props.showPoster ? "" : "no-poster"
+          }`}
+        >
           <div className="poster-container">
             <img
               src={TitleImage}
@@ -35,14 +39,14 @@ const Nav = () => {
           </div>
         </li>
         <li className="nav-list_item">
-          <NavLink className={"nav-list_item_link"} to={"#details"}>
-            Details
-          </NavLink>
+          <HashLink smooth className={"nav-list_item_link"} to={"#director"}>
+            Director
+          </HashLink>
         </li>
         <li className="nav-list_item">
-          <NavLink className={"nav-list_item_link"} to={"#interesting"}>
-            Interesting fact
-          </NavLink>
+          <HashLink smooth className={"nav-list_item_link"} to={"#facts"}>
+            Interesting facts
+          </HashLink>
         </li>
       </ul>
     </nav>

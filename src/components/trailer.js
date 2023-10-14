@@ -32,7 +32,7 @@ const Trailer = (props) => {
   }, []);
 
   return (
-    <section className="trailer">
+    <section className="trailer" id="trailer">
       <h2 className="section-title">
         Trailer<span className="period">.</span>
       </h2>

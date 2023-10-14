@@ -11,11 +11,11 @@ const ExtraButton = (props) => {
       onClick={props.onClick}
     >
       {props.text}
-      <img
+      {/* <img
         src={expandImg}
         alt="Expand Arrow"
         className={style[`down-arrow`]}
-      ></img>
+      ></img> */}
     </button>
   );
 };

@@ -63,7 +63,6 @@ ul {
   --black: #000;
   --green: #555d50;
   --para-font-size: calc(16px + 0.5vw);
-
   --final-Height: 250px;
   --final-Width: 3 * var(--final-Height);
   --scroll-Bar-Height: 1px;

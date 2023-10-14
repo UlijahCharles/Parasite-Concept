@@ -5,6 +5,10 @@
   gap: 12vw;
 }
 
+#director-title {
+  text-align: left;
+}
+
 .director-name {
   color: var(--white);
   margin-bottom: 1em;

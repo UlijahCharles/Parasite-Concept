@@ -49,7 +49,7 @@ const Cast = (props) => {
   }
 
   return (
-    <section className="cast">
+    <section className="cast" id="cast">
       <h2 className="section-title">
         Cast<span className="period">.</span>
       </h2>

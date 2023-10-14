@@ -1,6 +1,6 @@
 nav {
   background-color: #555d50;
-  padding-bottom: 2rem;
+  padding: 6rem 0;
 }
 
 .nav-list {
@@ -49,6 +49,10 @@ nav {
   filter: none;
 }
 
+.no-poster {
+  display: none;
+}
+
 .find-button {
   background-color: transparent;
   border: none;
@@ -75,12 +79,16 @@ nav {
 }
 
 @media screen and (max-width: 1800px) {
+  .nav {
+    padding: 2rem 0;
+  }
+
   .nav-list .nav-list_item__poster:nth-child(4) {
     order: 1;
   }
 
   .nav-list {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2vw;
   }
 

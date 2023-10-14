@@ -3,11 +3,17 @@ import "../css/facts.css";
 
 const Facts = (props) => {
   return (
-    <section className="facts">
-      <h2 className="section-title">
+    <section className="facts" id="facts">
+      <h2 className="section-title" id="facts-title">
         Interesting Facts <span className="period">.</span>
       </h2>
-      <div className="scrolling-wrapper-flexbox">
+      <div
+        className="scrolling-wrapper-flexbox"
+        onWheel={(e) => {
+          const wrapper = document.querySelector(".scrolling-wrapper-flexbox ");
+          wrapper.scrollLeft += e.deltaY;
+        }}
+      >
         <div className="item">
           Vivamus et ullamcorper risus. Ut venenatis sapien ante, commodo congue
           ligula dapibus dapibus. Vivamus rutrum dui libero. Integer vitae magna
@@ -45,6 +51,7 @@ const Facts = (props) => {
           tincidunt eros dolor non dui.
         </div>
       </div>
+      <p className="scroll-animation">{`SCROLL  >`}</p>
     </section>
   );
 };

@@ -100,8 +100,8 @@ const Director = (props) => {
   };
 
   return (
-    <section className="director">
-      <h2 className="section-title">
+    <section className="director" id="director">
+      <h2 className="section-title" id="director-title">
         Director <span className="period">.</span>
       </h2>
       <div className="director-flex">

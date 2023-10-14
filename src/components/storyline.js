@@ -6,7 +6,7 @@ import ExtraButton from "./extraButton";
 
 const Storyline = () => {
   return (
-    <section className="storyline-section">
+    <section className="storyline-section" id="storyline">
       <div className="storyline-header">
         <h2 className="storyline-header__title">
           Storyline<span className="period">.</span>
