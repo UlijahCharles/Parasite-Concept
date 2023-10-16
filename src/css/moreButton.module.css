@@ -1,5 +1,5 @@
 .button {
-  width: 230px;
+  width: 50%;
   /* border: 0.15rem solid white;
   border-left: none;
   border-right: none; */
@@ -9,9 +9,9 @@
   color: white;
   position: relative;
   transition: all ease-in 0.3s;
-  margin: 5rem auto;
+  margin: 2vh auto;
   text-align: center;
-  transform: scaleX(1.1);
+  /* transform: scaleX(1.1); */
   display: block;
 }
 

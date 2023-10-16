@@ -9,7 +9,7 @@
 .scrolling-wrapper-flexbox {
   display: flex;
   overflow: auto;
-  width: 100vw;
+  width: 90vw;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -18,7 +18,7 @@
     flex: 0 0 auto;
     margin: 2rem;
     padding: 2rem;
-    width: 50%;
+    width: 50vw;
     color: white;
     border: 0.15rem solid white;
   }
@@ -33,6 +33,14 @@
   animation: scroll 3s;
   animation-iteration-count: infinite;
   color: red;
+}
+
+@media screen and (max-width: 768px) {
+  .scrolling-wrapper-flexbox {
+    .item {
+      width: 100vw;
+    }
+  }
 }
 
 @keyframes scroll {

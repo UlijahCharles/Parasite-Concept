@@ -11,9 +11,16 @@ nav {
   gap: 5vw;
 }
 
+.nav-footer-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4vw;
+}
+
 .nav-list_item {
   display: flex;
-  font-size: 1.8rem;
+  font-size: calc(16px + 0.5vw);
 }
 
 .nav-list_item_link {
@@ -75,12 +82,13 @@ nav {
 
 .find-button:hover {
   color: #e74d51;
-  transform: scale(1.2);
+  animation: pulse 3s;
+  animation-iteration-count: infinite;
 }
 
 @media screen and (max-width: 1800px) {
   .nav {
-    padding: 2rem 0;
+    padding: 1rem 0;
   }
 
   .nav-list .nav-list_item__poster:nth-child(4) {
@@ -90,10 +98,6 @@ nav {
   .nav-list {
     flex-direction: column;
     gap: 2vw;
-  }
-
-  .nav-list_item {
-    font-size: calc(16px + 1vw);
   }
 
   .poster-container {
@@ -106,11 +110,36 @@ nav {
     position: relative;
     z-index: 0;
     top: 0;
-    width: 60vw;
+    width: 80vw;
     min-width: 300px;
   }
 
   .poster {
     display: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .nav-footer-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .find-button {
+    font-size: 6vw;
   }
 }

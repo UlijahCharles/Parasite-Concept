@@ -15,7 +15,7 @@ const Home = (props) => {
       <Trailer />
       <Cast castData={data.Cast} />
       <Director directorData={data.Director} />
-      <Facts />
+      <Facts factData={data.Facts} />
     </React.Fragment>
   );
 };

@@ -7,7 +7,7 @@ import "../css/nav.css";
 const Nav = (props) => {
   return (
     <nav className="nav">
-      <ul className="nav-list">
+      <ul className={props.isMainNav ? "nav-list" : "nav-footer-list"}>
         <li className="nav-list_item">
           <HashLink smooth className={"nav-list_item_link"} to={"#storyline"}>
             Storyline

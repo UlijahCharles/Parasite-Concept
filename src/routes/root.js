@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 function Root() {
   return (
     <>
-      <Nav showPoster={true} />
+      <Nav showPoster={true} isMainNav={true} />
       <div className="container">
         <main>
           <Outlet end />

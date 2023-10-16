@@ -39,7 +39,7 @@ const Trailer = (props) => {
       <div className="card">
         <div className="card-play"></div>
         <YouTube
-          videoId="JE9z-gy4De4"
+          videoId="isOGD_7hNIY"
           className="card-video"
           onReady={onReady}
         />

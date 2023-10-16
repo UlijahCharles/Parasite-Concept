@@ -2,6 +2,10 @@ import React from "react";
 import "../css/storyline.css";
 import img1 from "../assets/family_pizza.jpeg";
 import img2 from "../assets/sibling_bathroom.jpg";
+import img3 from "../assets/Park_Seo_Joon.jpeg";
+import img4 from "../assets/rock.jpg";
+import img5 from "../assets/choi_woo.jpg";
+import img6 from "../assets/mansion_set.jpg";
 import ExtraButton from "./extraButton";
 
 const Storyline = () => {
@@ -45,12 +49,12 @@ const Storyline = () => {
         <div className="storyline-grid__screenshot-container">
           <img
             className="storyline-grid__screenshot-container__img"
-            src={img1}
+            src={img3}
             alt="Movie Screencap 3"
           ></img>
           <img
             className="storyline-grid__screenshot-container__img"
-            src={img1}
+            src={img4}
             alt="Movie Screencap 4"
           ></img>
         </div>
@@ -63,12 +67,12 @@ const Storyline = () => {
         <div className="storyline-grid__screenshot-container">
           <img
             className="storyline-grid__screenshot-container__img"
-            src={img1}
+            src={img5}
             alt="Movie Screencap 3"
           ></img>
           <img
             className="storyline-grid__screenshot-container__img"
-            src={img1}
+            src={img6}
             alt="Movie Screencap 4"
           ></img>
         </div>
