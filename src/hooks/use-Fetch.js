@@ -14,15 +14,7 @@ const useFetch = () => {
       }
 
       const dataObject = await response.json();
-      // const catalog = [];
-      // for (const name in dataObject.cast) {
-      //   catalog.push({
-      //     id: dataObject[name].id,
-      //     imageUrl: dataObject[name].imageUrl,
-      //     title: dataObject[name].title,
-      //     price: dataObject[name].price,
-      //   });
-      // }
+
       setAPIData(dataObject);
     } catch (error) {
       console.log(error);
