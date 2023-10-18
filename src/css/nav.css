@@ -28,7 +28,7 @@ nav {
 }
 
 .nav-list_item_link:hover {
-  color: #e74d51;
+  color: var(--red);
   transform: scale(1.2);
 }
 
@@ -81,7 +81,7 @@ nav {
 }
 
 .find-button:hover {
-  color: #e74d51;
+  color: var(--red);
   animation: pulse 3s;
   animation-iteration-count: infinite;
 }

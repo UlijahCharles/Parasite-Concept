@@ -15,8 +15,6 @@ const Facts = (props) => {
     }
   }, [props.factData]);
 
-  console.log(factData);
-
   return (
     <section className="facts" id="facts">
       <h2 className="section-title" id="facts-title">

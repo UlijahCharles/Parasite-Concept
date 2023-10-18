@@ -62,6 +62,7 @@ ul {
   --white: #fff;
   --black: #000;
   --green: #555d50;
+  --red: #e74d51;
   --para-font-size: calc(16px + 0.5vw);
   --final-Height: 250px;
   --final-Width: 3 * var(--final-Height);
@@ -86,4 +87,8 @@ body {
 h3 {
   margin-top: 1em;
   color: var(--green);
+}
+
+.display-none {
+  display: none;
 }

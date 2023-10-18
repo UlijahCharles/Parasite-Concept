@@ -6,10 +6,6 @@
   width: 95%;
 }
 
-.display-none {
-  display: none;
-}
-
 .open {
   opacity: 1;
   transition: opacity ease-in 1s;

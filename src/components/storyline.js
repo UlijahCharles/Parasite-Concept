@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../css/storyline.css";
 import img1 from "../assets/family_pizza.jpeg";
 import img2 from "../assets/sibling_bathroom.jpg";
@@ -9,6 +9,12 @@ import img6 from "../assets/mansion_set.jpg";
 import ExtraButton from "./extraButton";
 
 const Storyline = () => {
+  const showStory = () => {
+    const item = document.querySelector(".surprise");
+
+    item.classList.toggle("display-none");
+  };
+
   return (
     <section className="storyline-section" id="storyline">
       <div className="storyline-header">
@@ -77,7 +83,9 @@ const Storyline = () => {
           ></img>
         </div>
       </div>
-      <ExtraButton text="READ FULL STORYLINE" />
+      <h2 className={`surprise display-none`}>WATCH THE FILM!</h2>
+
+      <ExtraButton text="READ FULL STORYLINE" onClick={showStory} />
     </section>
   );
 };
