@@ -35,6 +35,10 @@
   color: var(--red);
 }
 
+.stop-scrolling {
+  overflow: hidden;
+}
+
 @media screen and (max-width: 768px) {
   .scrolling-wrapper-flexbox {
     .item {

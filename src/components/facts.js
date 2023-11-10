@@ -26,6 +26,14 @@ const Facts = (props) => {
           const wrapper = document.querySelector(".scrolling-wrapper-flexbox ");
           wrapper.scrollLeft += e.deltaY;
         }}
+        onMouseEnter={() => {
+          console.log("MOUSE ENTER");
+          document.querySelector("body").classList.toggle("stop-scrolling");
+        }}
+        onMouseLeave={() => {
+          console.log("MOUSE Leave");
+          document.querySelector("body").classList.toggle("stop-scrolling");
+        }}
       >
         {factData}
       </div>
